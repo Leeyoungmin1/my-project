@@ -183,6 +183,10 @@ h2 {
         max-width: 100%;
       }
 
+      .my-img:hover {
+        transform: rotate(8deg);
+      }
+
       .color {
         grid-row: -2 / -1;
         grid-column: 4 / -1;

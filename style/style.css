@@ -156,6 +156,9 @@ h2 {
   grid-column: 3/-2;
   max-width: 100%;
 }
+.middle__wrapper .profile-container .my-img:hover {
+  transform: rotate(8deg);
+}
 .middle__wrapper .profile-container .color {
   grid-row: -2/-1;
   grid-column: 4/-1;
