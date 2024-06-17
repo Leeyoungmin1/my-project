@@ -77,12 +77,22 @@ h2 {
   animation-name: slider;
 }
 
-@keyframes slider {
+@keyframes rainbow {
   0% {
-    transform: translateX(0);
+    background-color: oklch(50%, 0.2, 0deg);
+  }
+  25% {
+    transform: translate(1rem, 0);
+  }
+  50% {
+    transform: translate(1rem, 1rem);
+  }
+  75% {
+    transform: translate(0, 1rem);
   }
   100% {
-    transform: translateX(100px);
+    background-color: oklch(50%, 0.2, 240deg);
+    transform: translate(0, 0);
   }
 }
 .middle {
@@ -150,17 +160,30 @@ h2 {
   grid-row: -2/-1;
   grid-column: 4/-1;
 }
-.middle__wrapper .character-container {
+.middle__wrapper .deco {
+  text-decoration: none;
+}
+.middle__wrapper .character-container-2 {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  margin-inline: auto;
+  font-weight: 500;
+  text-align: center;
 }
-.middle__wrapper .character-container-left .left-bottom {
+.middle__wrapper .character-container-2 .right-img-2 {
+  position: absolute;
+}
+.middle__wrapper .character-container-2 .imshi-hover {
+  filter: brightness(50%) blur(6px);
+}
+.middle__wrapper .character-container-2 .imshi-hover:hover {
+  filter: none;
+}
+.middle__wrapper .character-container-2 > p {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.middle__wrapper .character-container-left .left-bottom .character-icon > img {
-  max-width: 90px;
+  grid-template-columns: subgrid;
 }
 .middle__wrapper .works-container {
   display: grid;
@@ -186,6 +209,7 @@ h2 {
   margin-top: 16px;
 }
 .middle__wrapper .works-container .works-right .works-card:hover {
+  text-decoration: underline;
   background-color: oklch(72% 0.08 250deg);
   box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.25);
 }
