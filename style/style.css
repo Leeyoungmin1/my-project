@@ -61,6 +61,30 @@ h2 {
   border: 0.125rem solid oklch(42% 0.08 250deg);
 }
 
+.hero--welcom {
+  display: grid;
+  align-items: center;
+  font-size: 7rem;
+  text-align: center;
+}
+
+.slider {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: aqua;
+  transform: translateX(-10px);
+  animation-name: slider;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
 .middle {
   padding-inline: 1.5rem;
 }
@@ -68,8 +92,9 @@ h2 {
   max-width: 70rem;
   margin-inline: auto;
 }
-.middle__wrapper .welcom-profile {
-  font-size: 5rem;
+.middle__wrapper .middle-n-p {
+  max-width: 100%;
+  padding-inline: 0;
 }
 .middle__wrapper .title {
   display: grid;
@@ -160,10 +185,16 @@ h2 {
 .middle__wrapper .works-container .works-right .works-title-big {
   margin-top: 16px;
 }
+.middle__wrapper .works-container .works-right .works-card:hover {
+  background-color: oklch(72% 0.08 250deg);
+  box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.25);
+}
 .middle__wrapper .works-container .works-right .works-card {
   padding: 16px;
   background-color: oklch(42% 0.08 250deg);
   border-radius: 16px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.45);
+  transition: all 170ms ease-out;
 }
 .middle__wrapper .works-container .works-right .works-card .works-text {
   margin-top: 0;

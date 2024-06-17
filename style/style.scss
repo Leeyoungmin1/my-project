@@ -72,6 +72,34 @@ h2 {
   }
 }
 
+.hero {
+  &--welcom {
+    display: grid;
+    align-items: center;
+    font-size: 7rem;
+    text-align: center;
+  }
+}
+
+.slider {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: aqua;
+  transform: translateX(-10px);
+  animation-name: slider;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
+
 .middle {
   padding-inline: $middle-p-x;
 
@@ -79,10 +107,9 @@ h2 {
     max-width: $middle-w-mx;
     margin-inline: auto;
 
-    .welcom {
-      &-profile {
-        font-size: 5rem;
-      }
+    .middle-n-p {
+      max-width: 100%;
+      padding-inline: 0;
     }
 
     .title {
@@ -194,10 +221,17 @@ h2 {
           }
         }
 
+        .works-card:hover {
+          background-color: oklch(72% 0.08 250deg);
+          box-shadow: 0 0.125rem 0.125rem 0 rgb(0 0 0 / 25%);
+        }
+
         .works-card {
           padding: 16px;
           background-color: oklch(42% 0.08 250deg);
           border-radius: 16px;
+          box-shadow: 0 10px 10px 0 rgb(0 0 0 / 45%);
+          transition: all 170ms ease-out;
 
           .works-text {
             margin-top: 0;
