@@ -1,5 +1,37 @@
+:root {
+  --fixed-m-x: 0.9375rem;
+  --fixed-m-y: 1.25rem;
+}
+
 h2 {
   margin: 0;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 2;
+}
+a.fixed, .fixed a {
+  color: currentcolor;
+}
+
+.fixed--pos-br {
+  right: var(--fixed-m-x);
+  bottom: var(--fixed-m-y);
+}
+.fixed--role-list {
+  padding-left: 0;
+  margin-block: 0;
+  line-height: 1.8rem;
+  text-transform: capitalize;
+  list-style: none;
+}
+.fixed--role-list > li > a {
+  text-decoration: none;
+  text-shadow: #fff 1px 0 12px;
+}
+.fixed--role-list > li > a:hover {
+  text-decoration: underline;
 }
 
 .nav {
@@ -61,38 +93,71 @@ h2 {
   border: 0.125rem solid oklch(42% 0.08 250deg);
 }
 
-.hero--welcom {
+.hero {
+  display: grid;
+  background-color: oklch(95% 0.04 260deg);
+}
+
+.hero-title--welcom {
   display: grid;
   align-items: center;
+  margin-bottom: 70px;
   font-size: 7rem;
   text-align: center;
 }
-
-.slider {
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  background-color: aqua;
-  transform: translateX(-10px);
-  animation-name: slider;
+.hero-title .title-img {
+  max-width: 30%;
+  overflow: hidden;
 }
 
-@keyframes rainbow {
+.hero-music-strok {
+  stroke: oklch(42% 0.08 250deg);
+  stroke-linecap: 20px;
+  stroke-width: 3px;
+}
+.hero-music-icon-start {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.slider {
+  display: grid;
+  align-items: center;
+  max-width: 100%;
+  margin-inline: auto;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: oklch(42% 0.08 250deg);
+  text-align: center;
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  background-color: #fff;
+  transition: 0.3 ease;
+}
+
+.slider:hover {
+  animation-name: pika;
+  animation-duration: 1600ms;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pika {
   0% {
-    background-color: oklch(50%, 0.2, 0deg);
-  }
-  25% {
-    transform: translate(1rem, 0);
+    color: oklch(42% 0.08 250deg);
+    background-color: oklch(95% 0.04 260deg);
   }
   50% {
-    transform: translate(1rem, 1rem);
+    color: #fff;
+    background-color: oklch(42% 0.08 250deg);
   }
   75% {
-    transform: translate(0, 1rem);
+    color: oklch(42% 0.08 250deg);
+    background-color: oklch(95% 0.04 260deg);
   }
   100% {
-    background-color: oklch(50%, 0.2, 240deg);
-    transform: translate(0, 0);
+    color: oklch(42% 0.08 250deg);
+    background-color: oklch(95% 0.04 260deg);
   }
 }
 .middle {
@@ -134,17 +199,20 @@ h2 {
 .middle__wrapper .profile-container .name {
   display: grid;
   align-items: center;
-  font-size: 4rem;
+  font-size: 3.7rem;
 }
 .middle__wrapper .profile-container .introduce {
   grid-row: 2/-2;
   grid-column: 1/2;
+  padding-inline: 2rem;
   font-size: 1.25rem;
   background-color: #fff;
 }
 .middle__wrapper .profile-container .introduce-text {
   grid-row: -2/-1;
   grid-column: 1/2;
+  padding-inline: 2rem;
+  margin-block: auto;
   background-color: #fff;
 }
 .middle__wrapper .profile-container .mini-icon {
@@ -180,6 +248,7 @@ h2 {
 }
 .middle__wrapper .character-container-2 .imshi-hover {
   filter: brightness(50%) blur(6px);
+  transition: all 120ms ease-out;
 }
 .middle__wrapper .character-container-2 .imshi-hover:hover {
   filter: none;
@@ -207,6 +276,7 @@ h2 {
   grid-row: 1/2;
   grid-column: 1/-1;
   align-items: center;
+  font-size: 1.6rem;
 }
 .middle__wrapper .works-container .works-right .works-title-big {
   margin-top: 16px;
