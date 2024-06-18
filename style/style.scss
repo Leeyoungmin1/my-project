@@ -270,6 +270,8 @@ h2 {
         grid-row: -2 / -1;
         grid-column: 1 / 2;
         padding-inline: 2rem;
+        padding-top: 4px;
+        padding-bottom: 16px;
         margin-block: auto;
         background-color: #fff;
       }
@@ -325,21 +327,22 @@ h2 {
       text-decoration: none;
     }
 
-    .character-container-2 {
-      position: relative;
+    .character-wrap {
+      // position: relative;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-items: center;
-      margin-inline: auto;
+      grid-template-columns: 1fr 1fr;
+
+      // align-items: center;
+      // margin-inline: auto;
       font-weight: 500;
       text-align: center;
 
-      .right-img-2 {
-        position: absolute;
-      }
+      // .right-img-2 {
+      //   position: absolute;
+      // }
 
       .imshi-hover {
-        filter: brightness(50%) blur(6px);
+        filter: brightness(70%) blur(4px);
         transition: all 120ms ease-out;
       }
 
