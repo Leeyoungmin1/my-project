@@ -392,6 +392,26 @@ a.fixed, .fixed a {
 .typography img {
   max-width: 100%;
 }
+.typography .new-Alphabet .alphabet-family {
+  margin-top: 40px;
+  margin-bottom: 200px;
+}
+.typography .new-Alphabet .alphabet-family .family-family {
+  position: relative;
+  display: grid;
+}
+.typography .new-Alphabet .alphabet-family .family-family .ff {
+  position: absolute;
+  top: 53%;
+  left: 17%;
+  max-width: 30%;
+  box-shadow: 2px 3px 8px #464646;
+}
+.typography .new-Alphabet .alphabet-family .family-family .ft {
+  max-width: 40%;
+  margin-left: 730px;
+  box-shadow: 0 0 6px #8f8f8f;
+}
 .typography .cluella {
   display: grid;
   align-items: center;
@@ -399,6 +419,27 @@ a.fixed, .fixed a {
 .typography .cluella .resonance {
   display: grid;
   align-items: center;
+}
+.typography .cluella .leaflet {
+  align-items: center;
+  max-width: 60%;
+  margin-inline: auto;
+}
+.typography .cluella .leaflet .ll-1 {
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 8px #464646;
+}
+.typography .cluella .leaflet .ll-2 {
+  margin-bottom: 60px;
+  box-shadow: 3px 3px 8px #464646;
+}
+.typography .cluella .mockup {
+  align-items: center;
+  max-width: 60%;
+  margin-inline: auto;
+}
+.typography .cluella .mockup .mu-1 {
+  box-shadow: 3px 3px 10px #464646;
 }
 .typography .cluella .typo-best-1 {
   display: grid;
@@ -413,6 +454,7 @@ a.fixed, .fixed a {
   grid-template-columns: 1fr 1fr;
   max-width: 70%;
   margin-inline: auto;
+  margin-top: 150px;
   margin-bottom: 110px;
   text-align: center;
   text-transform: uppercase;
