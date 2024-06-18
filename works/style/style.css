@@ -177,6 +177,9 @@ a.fixed, .fixed a {
   vertical-align: middle;
   transition: all 0.35s;
 }
+.slidebox .slideitem img {
+  margin-inline: auto;
+}
 .slidebox .slideitem label {
   position: absolute;
   top: 50%;

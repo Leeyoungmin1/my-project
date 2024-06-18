@@ -202,6 +202,10 @@ li {
     vertical-align: middle;
     transition: all 0.35s;
 
+    img {
+      margin-inline: auto;
+    }
+
     label {
       position: absolute;
       top: 50%;
