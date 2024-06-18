@@ -578,6 +578,32 @@ li {
   img {
     max-width: 100%;
   }
+
+  .backstage-talks {
+    display: grid;
+    margin-bottom: 60px;
+
+    .bg-t {
+      display: grid;
+      align-items: center;
+      max-width: 60%;
+      margin-inline: auto;
+      text-align: center;
+    }
+  }
+
+  .my-profile {
+    display: grid;
+    margin-bottom: 150px;
+
+    .bg-t {
+      display: grid;
+      align-items: center;
+      max-width: 60%;
+      margin-inline: auto;
+      text-align: center;
+    }
+  }
 }
 
 .appropriate__technology {
@@ -601,6 +627,18 @@ li {
       left: 1%;
       font-size: 7.5rem;
       color: #fff;
+    }
+  }
+
+  .poster {
+    display: grid;
+
+    .poster-mu {
+      display: grid;
+      align-items: center;
+      max-width: 60%;
+      margin-inline: auto;
+      text-align: center;
     }
   }
 

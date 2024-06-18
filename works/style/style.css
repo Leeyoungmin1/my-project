@@ -473,6 +473,28 @@ a.fixed, .fixed a {
 .webmedia__design img {
   max-width: 100%;
 }
+.webmedia__design .backstage-talks {
+  display: grid;
+  margin-bottom: 60px;
+}
+.webmedia__design .backstage-talks .bg-t {
+  display: grid;
+  align-items: center;
+  max-width: 60%;
+  margin-inline: auto;
+  text-align: center;
+}
+.webmedia__design .my-profile {
+  display: grid;
+  margin-bottom: 150px;
+}
+.webmedia__design .my-profile .bg-t {
+  display: grid;
+  align-items: center;
+  max-width: 60%;
+  margin-inline: auto;
+  text-align: center;
+}
 
 .appropriate__technology .ad-best {
   position: relative;
@@ -493,6 +515,16 @@ a.fixed, .fixed a {
   left: 1%;
   font-size: 7.5rem;
   color: #fff;
+}
+.appropriate__technology .poster {
+  display: grid;
+}
+.appropriate__technology .poster .poster-mu {
+  display: grid;
+  align-items: center;
+  max-width: 60%;
+  margin-inline: auto;
+  text-align: center;
 }
 .appropriate__technology img {
   max-width: 100%;
