@@ -144,6 +144,7 @@ a.fixed, .fixed a {
 }
 
 .mini-title {
+  font-size: 26px;
   text-align: center;
 }
 
@@ -315,6 +316,21 @@ a.fixed, .fixed a {
 .communication_design .less_is_bore {
   margin-top: 40px;
 }
+.communication_design .less_is_bore .LIB-pattern .pattern {
+  position: relative;
+  display: grid;
+}
+.communication_design .less_is_bore .LIB-pattern .pattern .rt {
+  max-width: 50%;
+  margin-left: 330px;
+}
+.communication_design .less_is_bore .LIB-pattern .pattern .tt {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  max-width: 30%;
+  box-shadow: 4px 4px 14px #464646;
+}
 
 .typography {
   display: grid;
@@ -327,6 +343,7 @@ a.fixed, .fixed a {
   grid-template-columns: 1fr 1fr;
   max-width: 70%;
   margin-inline: auto;
+  margin-top: 150px;
   margin-bottom: 110px;
   text-align: center;
   text-transform: uppercase;
