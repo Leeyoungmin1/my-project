@@ -316,6 +316,10 @@ a.fixed, .fixed a {
 .communication_design .less_is_bore {
   margin-top: 40px;
 }
+.communication_design .less_is_bore .LIB-pattern {
+  margin-top: 40px;
+  margin-bottom: 200px;
+}
 .communication_design .less_is_bore .LIB-pattern .pattern {
   position: relative;
   display: grid;
@@ -331,10 +335,37 @@ a.fixed, .fixed a {
   max-width: 30%;
   box-shadow: 4px 4px 14px #464646;
 }
+.communication_design .less_is_bore .LIB-project {
+  margin-bottom: 200px;
+}
+.communication_design .less_is_bore .LIB-project .project {
+  position: relative;
+}
+.communication_design .less_is_bore .LIB-project .project .rt {
+  max-width: 50%;
+  margin-left: 330px;
+}
+.communication_design .less_is_bore .LIB-project .project .tt {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  max-width: 30%;
+  box-shadow: 4px 4px 14px #464646;
+}
+.communication_design .less_is_bore .LIB-final .final {
+  position: relative;
+}
+.communication_design .less_is_bore .LIB-final .final-file {
+  display: grid;
+  max-width: 69%;
+  margin-inline: auto;
+  box-shadow: 0 0 10px #8f8f8f;
+}
 
 .typography {
   display: grid;
   margin-inline: auto;
+  margin-top: 5px;
   text-align: center;
 }
 .typography .typo-best {

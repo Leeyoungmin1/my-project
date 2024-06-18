@@ -387,6 +387,9 @@ li {
     margin-top: 40px;
 
     .LIB-pattern {
+      margin-top: 40px;
+      margin-bottom: 200px;
+
       .pattern {
         position: relative;
         display: grid;
@@ -405,12 +408,47 @@ li {
         }
       }
     }
+
+    .LIB-project {
+      margin-bottom: 200px;
+
+      .project {
+        position: relative;
+
+        .rt {
+          max-width: 50%;
+          margin-left: 330px;
+        }
+
+        .tt {
+          position: absolute;
+          top: 45%;
+          left: 55%;
+          max-width: 30%;
+          box-shadow: 4px 4px 14px #464646;
+        }
+      }
+    }
+
+    .LIB-final {
+      .final {
+        position: relative;
+
+        &-file {
+          display: grid;
+          max-width: 69%;
+          margin-inline: auto;
+          box-shadow: 0 0 10px #8f8f8f;
+        }
+      }
+    }
   }
 }
 
 .typography {
   display: grid;
   margin-inline: auto;
+  margin-top: 5px;
   text-align: center;
 
   .typo-best {
