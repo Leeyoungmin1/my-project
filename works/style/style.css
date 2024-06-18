@@ -3,6 +3,10 @@
   --fixed-m-y: 1.25rem;
 }
 
+:target {
+  scroll-margin-block: 10ex;
+}
+
 *,
 ::before,
 ::after {
@@ -54,7 +58,7 @@ a.fixed, .fixed a {
   top: 0;
   z-index: 999;
   padding: 16px;
-  background-color: oklch(42% 0.08 250deg);
+  background-color: #000;
 }
 .nav__wrapper {
   display: grid;
@@ -96,16 +100,16 @@ a.fixed, .fixed a {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid rgba(56, 31, 209, 0);
+  border: 2px solid #000;
   border-radius: 6px;
 }
 .menu__item:hover {
   border: 0.125rem solid #fff;
 }
 .menu__item--style-filled {
-  color: oklch(42% 0.08 250deg);
+  color: #000;
   background-color: #fff;
-  border: 0.125rem solid oklch(42% 0.08 250deg);
+  border: #000;
 }
 
 .works-title {
@@ -119,8 +123,16 @@ a.fixed, .fixed a {
 }
 
 .sub-task-title {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-inline: auto;
   font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 20px;
+  color: inherit;
   text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 66);
 }
 
 .task-text {
@@ -129,6 +141,10 @@ a.fixed, .fixed a {
 
 .guid {
   color: darkblue;
+}
+
+.mini-title {
+  text-align: center;
 }
 
 [name=slide] {
@@ -271,4 +287,123 @@ a.fixed, .fixed a {
 }
 .slidebox [id=slide31]:checked ~ .slidelist .slideitem {
   transform: translateX(-3000%);
+}
+
+.communication_design .cd-best {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 70%;
+  margin-inline: auto;
+  margin-bottom: 110px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.communication_design .cd-best img {
+  filter: brightness(40%);
+}
+.communication_design .cd-best .best-text {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  font-size: 7.5rem;
+  color: #fff;
+}
+.communication_design img {
+  max-width: 100%;
+}
+.communication_design .less_is_bore {
+  margin-top: 40px;
+}
+
+.typography {
+  display: grid;
+  margin-inline: auto;
+  text-align: center;
+}
+.typography .typo-best {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 70%;
+  margin-inline: auto;
+  margin-bottom: 110px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.typography .typo-best img {
+  filter: brightness(40%);
+}
+.typography .typo-best .typo-text {
+  position: absolute;
+  top: 33%;
+  left: 17%;
+  font-size: 7.5rem;
+  color: #fff;
+}
+.typography img {
+  max-width: 100%;
+}
+.typography .cluella {
+  display: grid;
+  align-items: center;
+}
+.typography .cluella .resonance {
+  display: grid;
+  align-items: center;
+}
+.typography .cluella .typo-best-1 {
+  display: grid;
+  align-items: center;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.webmedia__design .web-best {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 70%;
+  margin-inline: auto;
+  margin-bottom: 110px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.webmedia__design .web-best img {
+  filter: brightness(40%);
+}
+.webmedia__design .web-best .web-text {
+  position: absolute;
+  top: 33%;
+  left: 6%;
+  font-size: 7.5rem;
+  color: #fff;
+  text-align: center;
+}
+.webmedia__design img {
+  max-width: 100%;
+}
+
+.appropriate__technology .ad-best {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 70%;
+  margin-inline: auto;
+  margin-bottom: 110px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.appropriate__technology .ad-best img {
+  filter: brightness(40%);
+}
+.appropriate__technology .ad-best .ad-text {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  font-size: 7.5rem;
+  color: #fff;
+}
+.appropriate__technology img {
+  max-width: 100%;
 }

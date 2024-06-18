@@ -3,6 +3,10 @@
   --fixed-m-y: 1.25rem;
 }
 
+:target {
+  scroll-margin-block: 10px;
+}
+
 h2 {
   margin: 0;
 }
