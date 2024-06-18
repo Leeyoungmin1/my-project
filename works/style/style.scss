@@ -13,6 +13,10 @@ body {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
 ul,
 li {
   padding: 0;
@@ -125,6 +129,29 @@ li {
   }
 }
 
+.works-title {
+  font-size: 7rem;
+  text-align: center;
+}
+
+.main-task-title {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.sub-task-title {
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+.task-text {
+  text-align: center;
+}
+
+.guid {
+  color: darkblue;
+}
+
 [name='slide'] {
   display: none;
 }
@@ -164,20 +191,23 @@ li {
 
     .left {
       left: 20px;
-      background-color: #5f5f5f;
-      background-image: ur1('./img/left-arrow.png');
+
+      // background-color: #5f5f5f;
+      background-image: url('./../../assets/arrow_back.png');
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: 50%;
+      background-size: 100%;
     }
 
     .right {
       right: 20px;
-      background-color: #5f5f5f;
-      background-image: ur1('./img/right-arrow.png');
+
+      // background-color: #5f5f5f;
+
+      background-image: url('./../../assets/arrow_forward.png');
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: 50%;
+      background-size: 100%;
     }
   }
 
