@@ -71,7 +71,7 @@ a.fixed, .fixed a {
   top: 0;
   z-index: 999;
   padding: 16px;
-  background-color: #000;
+  background-color: oklch(42% 0.08 250deg);
 }
 .nav__wrapper {
   display: grid;
@@ -120,9 +120,9 @@ a.fixed, .fixed a {
   border: 0.125rem solid #fff;
 }
 .menu__item--style-filled {
-  color: #000;
+  color: oklch(42% 0.08 250deg);
   background-color: #fff;
-  border: 0.125rem solid #000;
+  border: 0.125rem solid oklch(42% 0.08 250deg);
 }
 
 .hidden-menu {
@@ -665,7 +665,7 @@ a.fixed, .fixed a {
   padding-inline: 10rem;
   margin-top: 150px;
   color: #fff;
-  background-color: #000;
+  background-color: oklch(42% 0.08 250deg);
 }
 .footer-top {
   display: grid;

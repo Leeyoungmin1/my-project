@@ -88,7 +88,7 @@ li {
   top: 0;
   z-index: 999;
   padding: 16px;
-  background-color: #000;
+  background-color: oklch(42% 0.08 250deg);
 
   &__wrapper {
     display: grid;
@@ -143,9 +143,9 @@ li {
     }
 
     &--style-filled {
-      color: #000;
+      color: oklch(42% 0.08 250deg);
       background-color: #fff;
-      border: 0.125rem solid #000;
+      border: 0.125rem solid oklch(42% 0.08 250deg);
     }
   }
 }
@@ -806,7 +806,7 @@ li {
   padding-inline: 10rem;
   margin-top: 150px;
   color: #fff;
-  background-color: #000;
+  background-color: oklch(42% 0.08 250deg);
 
   &-top {
     display: grid;
