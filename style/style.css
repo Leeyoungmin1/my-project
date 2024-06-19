@@ -57,7 +57,8 @@ a.fixed, .fixed a {
 .nav__wrapper {
   display: grid;
   grid-template-columns: 32px repeat(4, auto) 1fr repeat(2, auto);
-  gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   align-items: center;
   max-width: 60rem;
   min-height: 0.3rem;
@@ -106,6 +107,22 @@ a.fixed, .fixed a {
   border: 0.125rem solid oklch(42% 0.08 250deg);
 }
 
+.hidden-menu {
+  display: none;
+  grid-column: -1/-2;
+  max-width: 45%;
+  padding: 0;
+  margin: 0;
+}
+
+@media (width <= 600px) {
+  .g {
+    display: none;
+  }
+  .hidden-menu {
+    display: block;
+  }
+}
 .hero {
   display: grid;
   background-color: oklch(95% 0.04 260deg);
