@@ -1,3 +1,8 @@
+:root {
+  --fixed-m-x: 0.9375rem;
+  --fixed-m-y: 1.25rem;
+}
+
 *,
 ::before,
 ::after {
@@ -6,6 +11,56 @@
 
 body {
   margin: 0;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 100;
+
+  @at-root a#{&},
+    & a {
+    color: currentcolor;
+
+    // text-decoration: none;
+  }
+
+  .upper {
+    max-width: 28px;
+    padding: 3.4px;
+    margin-bottom: 8px;
+    background-color: #000;
+    filter: brightness(200%);
+    border-radius: 50%;
+    box-shadow: 0 0 8px #fff;
+  }
+
+  &--pos {
+    &-br {
+      right: var(--fixed-m-x);
+      bottom: var(--fixed-m-y);
+    }
+  }
+
+  &--role {
+    &-list {
+      padding-left: 0;
+      margin-block: 0;
+      line-height: 1.8rem;
+      text-transform: capitalize;
+      list-style: none;
+
+      > li {
+        > a {
+          text-decoration: none;
+          text-shadow: 0 0 8px #fff;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
 
 .nav {
@@ -80,6 +135,7 @@ body {
     align-items: center;
     max-width: 70%;
     margin-inline: auto;
+    margin-bottom: 150px;
     text-align: center;
 
     .main-title {
@@ -93,6 +149,16 @@ body {
       max-width: 100%;
       margin-inline: auto;
       text-align: center;
+    }
+
+    .soon {
+      margin-top: 164px;
+      margin-bottom: 50px;
+      font-size: 5vw;
+    }
+
+    .text {
+      font-size: 1.4vw;
     }
   }
 }
