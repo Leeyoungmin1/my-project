@@ -19,6 +19,15 @@ a.fixed, .fixed a {
   color: currentcolor;
 }
 
+.fixed .upper {
+  max-width: 28px;
+  padding: 3.4px;
+  margin-bottom: 8px;
+  background-color: #000;
+  filter: brightness(200%);
+  border-radius: 50%;
+  box-shadow: 0 0 8px #fff;
+}
 .fixed--pos-br {
   right: var(--fixed-m-x);
   bottom: var(--fixed-m-y);
@@ -32,7 +41,7 @@ a.fixed, .fixed a {
 }
 .fixed--role-list > li > a {
   text-decoration: none;
-  text-shadow: #fff 1px 0 12px;
+  text-shadow: 0 0 8px #fff;
 }
 .fixed--role-list > li > a:hover {
   text-decoration: underline;
@@ -323,5 +332,19 @@ a.fixed, .fixed a {
   grid-column: -1/-2;
 }
 .footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   margin-top: 16px;
+}
+.footer-bottom .instagram img {
+  border-radius: 12px;
+}
+.footer-bottom .gmail {
+  max-width: 48px;
+}
+.footer-bottom .gmail img {
+  border-radius: 12px;
 }

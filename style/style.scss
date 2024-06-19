@@ -25,6 +25,16 @@ h2 {
     // text-decoration: none;
   }
 
+  .upper {
+    max-width: 28px;
+    padding: 3.4px;
+    margin-bottom: 8px;
+    background-color: #000;
+    filter: brightness(200%);
+    border-radius: 50%;
+    box-shadow: 0 0 8px #fff;
+  }
+
   &--pos {
     &-br {
       right: var(--fixed-m-x);
@@ -43,7 +53,7 @@ h2 {
       > li {
         > a {
           text-decoration: none;
-          text-shadow: #fff 1px 0 12px;
+          text-shadow: 0 0 8px #fff;
 
           &:hover {
             text-decoration: underline;
@@ -436,6 +446,24 @@ h2 {
   }
 
   &-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    max-width: fit-content;
     margin-top: 16px;
+
+    .instagram {
+      img {
+        border-radius: 12px;
+      }
+    }
+
+    .gmail {
+      max-width: 48px;
+
+      img {
+        border-radius: 12px;
+      }
+    }
   }
 }

@@ -44,6 +44,16 @@ li {
     // text-decoration: none;
   }
 
+  .upper {
+    max-width: 28px;
+    padding: 3.4px;
+    margin-bottom: 8px;
+    background-color: #000;
+    filter: brightness(200%);
+    border-radius: 50%;
+    box-shadow: 0 0 8px #fff;
+  }
+
   &--pos {
     &-br {
       right: var(--fixed-m-x);
@@ -62,7 +72,7 @@ li {
       > li {
         > a {
           text-decoration: none;
-          text-shadow: #fff 1px 0 12px;
+          text-shadow: #fff 0 0 8px;
 
           &:hover {
             text-decoration: underline;
