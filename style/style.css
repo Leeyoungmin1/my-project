@@ -13,7 +13,7 @@ h2 {
 
 .fixed {
   position: fixed;
-  z-index: 2;
+  z-index: 100;
 }
 a.fixed, .fixed a {
   color: currentcolor;
@@ -123,14 +123,6 @@ a.fixed, .fixed a {
   overflow: hidden;
 }
 
-.hero-music-strok {
-  stroke: oklch(42% 0.08 250deg);
-  stroke-linecap: 20px;
-  stroke-width: 3px;
-}
-.hero-music-icon-start {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
 .slider {
   display: grid;
   align-items: center;
@@ -174,6 +166,7 @@ a.fixed, .fixed a {
   }
 }
 .middle {
+  max-width: 100%;
   padding-inline: 1.5rem;
 }
 .middle__wrapper {
@@ -201,8 +194,8 @@ a.fixed, .fixed a {
 }
 .middle__wrapper .profile-container {
   display: grid;
-  grid-template-rows: 120px auto auto;
-  grid-template-columns: 400px 70px 1fr 60px;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
   padding: 2.5rem;
   background-color: oklch(95% 0.04 260deg);
@@ -212,6 +205,7 @@ a.fixed, .fixed a {
 .middle__wrapper .profile-container .name {
   display: grid;
   align-items: center;
+  max-width: 100%;
   font-size: 3.7rem;
 }
 .middle__wrapper .profile-container .introduce {
@@ -230,21 +224,14 @@ a.fixed, .fixed a {
   margin-block: auto;
   background-color: #fff;
 }
-.middle__wrapper .profile-container .mini-icon {
-  grid-row: 2/2;
-  grid-column: 2/2;
-}
 .middle__wrapper .profile-container .my-img {
   grid-row: 1/-1;
   grid-column: 3/-2;
+  min-width: 100%;
   max-width: 100%;
 }
 .middle__wrapper .profile-container .my-img:hover {
   transform: rotate(8deg);
-}
-.middle__wrapper .profile-container .color {
-  grid-row: -2/-1;
-  grid-column: 4/-1;
 }
 .middle__wrapper .deco {
   text-decoration: none;
@@ -268,7 +255,7 @@ a.fixed, .fixed a {
 }
 .middle__wrapper .works-container {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr 2fr;
   margin-top: 180px;
   margin-bottom: 210px;
 }

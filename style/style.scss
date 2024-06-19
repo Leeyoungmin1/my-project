@@ -16,7 +16,7 @@ h2 {
 
 .fixed {
   position: fixed;
-  z-index: 2;
+  z-index: 100;
 
   @at-root a#{&},
     & a {
@@ -151,26 +151,6 @@ h2 {
   }
 }
 
-.hero-music {
-  &-strok {
-    stroke: oklch(42% 0.08 250deg);
-    stroke-linecap: 20px;
-    stroke-width: 3px;
-  }
-
-  &-icon {
-    &-left {
-    }
-
-    &-start {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }
-
-    &-right {
-    }
-  }
-}
-
 .slider {
   display: grid;
   align-items: center;
@@ -223,6 +203,7 @@ h2 {
 }
 
 .middle {
+  max-width: 100%;
   padding-inline: $middle-p-x;
 
   &__wrapper {
@@ -254,8 +235,8 @@ h2 {
 
     .profile-container {
       display: grid;
-      grid-template-rows: 120px auto auto;
-      grid-template-columns: 400px 70px 1fr 60px;
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 16px;
       padding: 2.5rem;
       background-color: oklch(95% 0.04 260deg);
@@ -265,6 +246,7 @@ h2 {
       .name {
         display: grid;
         align-items: center;
+        max-width: 100%;
         font-size: 3.7rem;
       }
 
@@ -286,24 +268,15 @@ h2 {
         background-color: #fff;
       }
 
-      .mini-icon {
-        grid-row: 2 / 2;
-        grid-column: 2 / 2;
-      }
-
       .my-img {
         grid-row: 1 / -1;
         grid-column: 3 / -2;
+        min-width: 100%;
         max-width: 100%;
       }
 
       .my-img:hover {
         transform: rotate(8deg);
-      }
-
-      .color {
-        grid-row: -2 / -1;
-        grid-column: 4 / -1;
       }
     }
 
@@ -368,7 +341,7 @@ h2 {
 
     .works-container {
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 1fr 2fr;
       margin-top: 180px;
       margin-bottom: 210px;
 
