@@ -3,16 +3,6 @@
   --fixed-m-y: 1.25rem;
 }
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 .nav {
   position: sticky;
   top: 0;
