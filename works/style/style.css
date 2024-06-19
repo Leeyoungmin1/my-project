@@ -319,12 +319,15 @@ a.fixed, .fixed a {
 .communication_design .cd-best img {
   filter: brightness(40%);
 }
-.communication_design .cd-best .best-text {
+.communication_design .cd-best .cd-in-text {
   position: absolute;
-  top: 15%;
-  left: 1%;
-  font-size: 7.5rem;
+  top: 55%;
+  left: 50%;
+  max-width: 80%;
+  font-size: 4.7vw;
   color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 .communication_design img {
   max-width: 100%;
@@ -398,12 +401,15 @@ a.fixed, .fixed a {
 .typography .typo-best img {
   filter: brightness(40%);
 }
-.typography .typo-best .typo-text {
+.typography .typo-best .typo-in-text {
   position: absolute;
-  top: 33%;
-  left: 17%;
-  font-size: 7.5rem;
+  top: 55%;
+  left: 50%;
+  max-width: 80%;
+  font-size: 6vw;
   color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 .typography img {
   max-width: 100%;
@@ -478,13 +484,15 @@ a.fixed, .fixed a {
 .webmedia__design .web-best img {
   filter: brightness(40%);
 }
-.webmedia__design .web-best .web-text {
+.webmedia__design .web-best .web-in-text {
   position: absolute;
-  top: 33%;
-  left: 6%;
-  font-size: 7.5rem;
+  top: 55%;
+  left: 50%;
+  max-width: 80%;
+  font-size: 6vw;
   color: #fff;
   text-align: center;
+  transform: translate(-50%, -50%);
 }
 .webmedia__design img {
   max-width: 100%;
@@ -585,12 +593,15 @@ a.fixed, .fixed a {
 .appropriate__technology .ad-best img {
   filter: brightness(40%);
 }
-.appropriate__technology .ad-best .ad-text {
+.appropriate__technology .ad-best .ad-in-text {
   position: absolute;
-  top: 15%;
-  left: 1%;
-  font-size: 7.5rem;
+  top: 55%;
+  left: 50%;
+  max-width: 80%;
+  font-size: 5vw;
   color: #fff;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 .appropriate__technology .poster {
   display: grid;

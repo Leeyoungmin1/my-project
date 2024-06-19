@@ -388,12 +388,15 @@ li {
       filter: brightness(40%);
     }
 
-    .best-text {
+    .cd-in-text {
       position: absolute;
-      top: 15%;
-      left: 1%;
-      font-size: 7.5rem;
+      top: 55%;
+      left: 50%;
+      max-width: 80%;
+      font-size: 4.7vw;
       color: #fff;
+      text-align: center;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -484,12 +487,15 @@ li {
       filter: brightness(40%);
     }
 
-    .typo-text {
+    .typo-in-text {
       position: absolute;
-      top: 33%;
-      left: 17%;
-      font-size: 7.5rem;
+      top: 55%;
+      left: 50%;
+      max-width: 80%;
+      font-size: 6vw;
       color: #fff;
+      text-align: center;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -583,13 +589,15 @@ li {
       filter: brightness(40%);
     }
 
-    .web-text {
+    .web-in-text {
       position: absolute;
-      top: 33%;
-      left: 6%;
-      font-size: 7.5rem;
+      top: 55%;
+      left: 50%;
+      max-width: 80%;
+      font-size: 6vw;
       color: #fff;
       text-align: center;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -715,12 +723,15 @@ li {
       filter: brightness(40%);
     }
 
-    .ad-text {
+    .ad-in-text {
       position: absolute;
-      top: 15%;
-      left: 1%;
-      font-size: 7.5rem;
+      top: 55%;
+      left: 50%;
+      max-width: 80%;
+      font-size: 5vw;
       color: #fff;
+      text-align: center;
+      transform: translate(-50%, -50%);
     }
   }
 
