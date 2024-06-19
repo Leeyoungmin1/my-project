@@ -98,7 +98,8 @@ body {
     font-size: 40px !important;
   }
   .footer {
-    padding-inline: 10px !important;
+    padding-inline: 5px !important;
+    font-size: 11px;
   }
 }
 .mid {

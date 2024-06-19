@@ -88,11 +88,11 @@
     font-size: 40px !important;
   }
   .container-contant-box {
-    padding-block: 0.5vw !important;
-    padding-inline: 0.5vw !important;
+    display: none;
   }
   .footer {
-    padding-inline: 10px !important;
+    padding-inline: 5px !important;
+    font-size: 11px;
   }
 }
 .mid {
