@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+h3 {
+  margin: 0;
+  line-height: 180px;
+}
+
 body {
   margin: 0;
 }
@@ -94,13 +99,17 @@ body {
 .middle .band .project img {
   filter: brightness(40%);
 }
-.middle .band .project .band-text {
+.middle .band .project .band-in-text {
   position: absolute;
-  top: 6%;
-  left: 37%;
-  font-size: 7.5rem;
+  top: 55%;
+  left: 50%;
+  max-width: 80%;
+  margin-top: 0;
+  font-size: 15vw;
   color: #fff;
   text-align: center;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
 }
 .middle .band .introduce-bass {
   max-width: 70%;

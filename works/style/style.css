@@ -60,7 +60,7 @@ a.fixed, .fixed a {
 }
 .fixed--role-list > li > a {
   text-decoration: none;
-  text-shadow: #fff 0 0 8px;
+  text-shadow: #fff 1px 0 12px;
 }
 .fixed--role-list > li > a:hover {
   text-decoration: underline;
