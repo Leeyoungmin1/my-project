@@ -107,6 +107,27 @@ body {
   margin-inline: auto;
   text-align: center;
 }
+.mid h1 {
+  font-size: 5vw;
+}
+.mid .setting-text {
+  margin-inline: auto;
+  margin-top: 20px;
+}
+.mid p {
+  text-align: center;
+}
+.mid .space {
+  margin-top: 58px;
+}
+.mid .setting-sub {
+  margin-top: 94px;
+  font-size: 2vw;
+}
+.mid .setting-lottie {
+  max-width: 100%;
+  margin-inline: auto;
+}
 .mid img {
   max-width: 100%;
   margin-inline: auto;
