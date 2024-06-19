@@ -113,7 +113,7 @@ a.fixed, .fixed a {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #000;
+  border: 2px solid rgba(56, 31, 209, 0);
   border-radius: 6px;
 }
 .menu__item:hover {
@@ -122,7 +122,7 @@ a.fixed, .fixed a {
 .menu__item--style-filled {
   color: #000;
   background-color: #fff;
-  border: #000;
+  border: 0.125rem solid #000;
 }
 
 .works-title {
