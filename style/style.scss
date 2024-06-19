@@ -139,6 +139,11 @@ h2 {
   padding: 0;
   margin: 0;
   margin-inline: auto;
+  border-radius: 8px;
+}
+
+.hidden-menu:hover {
+  box-shadow: 0 0 8px #fff;
 }
 
 @media (width <= 600px) {
