@@ -1,0 +1,120 @@
+:root {
+  --fixed-m-x: 0.9375rem;
+  --fixed-m-y: 1.25rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 16px;
+  background-color: oklch(42% 0.08 250deg);
+}
+.nav__wrapper {
+  display: grid;
+  grid-template-columns: 32px repeat(4, auto) 1fr repeat(2, auto);
+  gap: 1rem;
+  align-items: center;
+  max-width: 60rem;
+  min-height: 0.3rem;
+  margin-inline: auto;
+}
+
+.logo {
+  grid-column: 1;
+  color: #fff;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: subgrid;
+  padding-left: 0;
+  margin-block: 0;
+  list-style: none;
+}
+.menu--pos-left {
+  grid-column: 2/span 4;
+  color: #fff;
+}
+.menu--pos-right {
+  grid-column: -3/-1;
+}
+.menu__item {
+  display: grid;
+  align-items: center;
+  height: 32px;
+  padding-inline: 8px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid rgba(56, 31, 209, 0);
+  border-radius: 6px;
+}
+.menu__item:hover {
+  border: 0.125rem solid #fff;
+}
+.menu__item--style-filled {
+  color: oklch(42% 0.08 250deg);
+  background-color: #fff;
+  border: 0.125rem solid oklch(42% 0.08 250deg);
+}
+
+.footer {
+  padding-block: 32px;
+  padding-inline: 10rem;
+  color: #fff;
+  background-color: oklch(42% 0.08 250deg);
+}
+.footer-top {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+.footer-top-left {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-template-columns: subgrid;
+  grid-row: 1/-1;
+  grid-column: 1/3;
+}
+.footer-top-left .footer-box .big-link {
+  font-size: 22px;
+  color: #fff;
+}
+.footer-top-left .footer-box li {
+  list-style-type: none;
+}
+.footer-top-right {
+  grid-column: -1/-2;
+}
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-top: 16px;
+}
+.footer-bottom .instagram img {
+  border-radius: 12px;
+}
+.footer-bottom .gmail {
+  max-width: 48px;
+}
+.footer-bottom .gmail img {
+  border-radius: 12px;
+}
