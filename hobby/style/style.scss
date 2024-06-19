@@ -74,3 +74,167 @@ body {
     }
   }
 }
+
+.sub-title {
+  margin-top: 120px;
+  font-size: 2.5rem;
+}
+
+.middle {
+  .main-title {
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .band {
+    .guid {
+      color: darkblue;
+    }
+
+    .project {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 70%;
+      margin-inline: auto;
+      margin-top: 150px;
+      margin-bottom: 110px;
+      text-align: center;
+      text-transform: uppercase;
+
+      img {
+        filter: brightness(40%);
+      }
+
+      .band-text {
+        position: absolute;
+        top: 6%;
+        left: 37%;
+        font-size: 7.5rem;
+        color: #fff;
+        text-align: center;
+      }
+    }
+
+    .introduce-bass {
+      max-width: 70%;
+      margin-inline: auto;
+      text-align: center;
+
+      &-title {
+        font-size: 4.7rem;
+      }
+
+      ol {
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+
+    .my-guitar {
+      max-width: 70%;
+      margin-inline: auto;
+      text-align: center;
+
+      &-title {
+        font-size: 2.5rem;
+      }
+
+      img {
+        max-width: 26%;
+        margin-inline: auto;
+      }
+    }
+
+    .favorit-band {
+      max-width: 70%;
+      margin-inline: auto;
+      text-align: center;
+
+      .band-list {
+        &--lucy {
+          padding: 15px;
+          margin-bottom: 25px;
+          background-color: oklch(95% 0.04 260deg);
+          border-radius: 18px;
+
+          .band-logo {
+            max-width: 20%;
+            margin-inline: auto;
+          }
+
+          .band-img {
+            max-width: 50%;
+            margin-inline: auto;
+          }
+        }
+
+        &--day6 {
+          padding: 15px;
+          margin-bottom: 25px;
+          background-color: oklch(95% 0.04 260deg);
+          border-radius: 18px;
+
+          .band-logo {
+            max-width: 20%;
+            margin-inline: auto;
+          }
+
+          .band-img {
+            max-width: 50%;
+            margin-inline: auto;
+          }
+        }
+
+        &--yorushika {
+          padding: 15px;
+          background-color: oklch(95% 0.04 260deg);
+          border-radius: 18px;
+
+          .band-logo {
+            max-width: 20%;
+            margin-inline: auto;
+          }
+
+          .band-img {
+            max-width: 50%;
+            margin-inline: auto;
+          }
+        }
+      }
+    }
+
+    .recommendation-youtube {
+      max-width: 70%;
+      margin-inline: auto;
+      text-align: center;
+
+      .youtube-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        margin-inline: auto;
+        margin-top: 60px;
+        text-align: center;
+
+        .youtube-border {
+          margin-inline: auto;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .my-play {
+      max-width: 70%;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .tmi {
+      max-width: 70%;
+      margin-inline: auto;
+      text-align: center;
+    }
+  }
+}
