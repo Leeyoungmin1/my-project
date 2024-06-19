@@ -87,6 +87,10 @@
   .so-big {
     font-size: 40px !important;
   }
+  .container-contant-box {
+    padding-block: 0.5vw !important;
+    padding-inline: 0.5vw !important;
+  }
   .footer {
     padding-inline: 10px !important;
   }
@@ -101,6 +105,33 @@
 .mid .side-bar {
   grid-row: 1/-1;
   grid-column: 1/2;
+  padding-inline: 18px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: oklch(95% 0.04 260deg);
+  box-shadow: 1px 0 10px #989898;
+}
+.mid .side-bar .profile-img {
+  max-width: 100%;
+}
+.mid .container {
+  display: grid;
+}
+.mid .container-top {
+  grid-column: 1/-1;
+}
+.mid .container-contant {
+  display: grid;
+  max-width: 100;
+}
+.mid .container-contant-box {
+  max-width: 100%;
+  padding-block: 4vw;
+  padding-inline: 15vw;
+  margin-inline: auto;
+  margin-bottom: 32px;
+  background-color: oklch(95% 0.04 260deg);
+  border: 2px solid oklch(42% 0.08 250deg);
 }
 .mid h1 {
   font-size: 4vw;
