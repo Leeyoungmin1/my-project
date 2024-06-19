@@ -32,7 +32,7 @@ li {
 
 .fixed {
   position: fixed;
-  z-index: 2;
+  z-index: 100;
 }
 a.fixed, .fixed a {
   color: currentcolor;
