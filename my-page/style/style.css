@@ -93,9 +93,14 @@
 }
 .mid {
   display: grid;
+  grid-template-columns: 1fr 4fr;
   align-items: center;
   margin-inline: auto;
   text-align: center;
+}
+.mid .side-bar {
+  grid-row: 1/-1;
+  grid-column: 1/2;
 }
 .mid h1 {
   font-size: 4vw;
