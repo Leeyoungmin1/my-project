@@ -275,6 +275,9 @@ a.fixed, .fixed a {
   margin-inline: auto;
   text-align: center;
 }
+.middle .band .recommendation-youtube .lottie-youtube .lottie-y {
+  margin-inline: auto;
+}
 .middle .band .recommendation-youtube .youtube-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

@@ -343,6 +343,12 @@ body {
       margin-inline: auto;
       text-align: center;
 
+      .lottie-youtube {
+        .lottie-y {
+          margin-inline: auto;
+        }
+      }
+
       .youtube-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
