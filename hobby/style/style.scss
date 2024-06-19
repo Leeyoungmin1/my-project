@@ -295,6 +295,11 @@ body {
           .band-logo {
             max-width: 20%;
             margin-inline: auto;
+            margin-bottom: 16px;
+          }
+
+          a > img:hover {
+            box-shadow: 3px 3px 8px #464646;
           }
 
           .band-img {
@@ -312,6 +317,11 @@ body {
           .band-logo {
             max-width: 20%;
             margin-inline: auto;
+            margin-bottom: 16px;
+          }
+
+          a > img:hover {
+            box-shadow: 3px 3px 8px #464646;
           }
 
           .band-img {
@@ -328,6 +338,11 @@ body {
           .band-logo {
             max-width: 20%;
             margin-inline: auto;
+            margin-bottom: 16px;
+          }
+
+          a > img:hover {
+            box-shadow: 3px 3px 8px #464646;
           }
 
           .band-img {
@@ -360,6 +375,10 @@ body {
         .youtube-border {
           margin-inline: auto;
           border-radius: 50%;
+        }
+
+        img:hover {
+          box-shadow: 4px 4px 12px #464646;
         }
       }
     }

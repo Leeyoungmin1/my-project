@@ -238,6 +238,10 @@ a.fixed, .fixed a {
 .middle .band .favorit-band .band-list--lucy .band-logo {
   max-width: 20%;
   margin-inline: auto;
+  margin-bottom: 16px;
+}
+.middle .band .favorit-band .band-list--lucy a > img:hover {
+  box-shadow: 3px 3px 8px #464646;
 }
 .middle .band .favorit-band .band-list--lucy .band-img {
   max-width: 50%;
@@ -252,6 +256,10 @@ a.fixed, .fixed a {
 .middle .band .favorit-band .band-list--day6 .band-logo {
   max-width: 20%;
   margin-inline: auto;
+  margin-bottom: 16px;
+}
+.middle .band .favorit-band .band-list--day6 a > img:hover {
+  box-shadow: 3px 3px 8px #464646;
 }
 .middle .band .favorit-band .band-list--day6 .band-img {
   max-width: 50%;
@@ -265,6 +273,10 @@ a.fixed, .fixed a {
 .middle .band .favorit-band .band-list--yorushika .band-logo {
   max-width: 20%;
   margin-inline: auto;
+  margin-bottom: 16px;
+}
+.middle .band .favorit-band .band-list--yorushika a > img:hover {
+  box-shadow: 3px 3px 8px #464646;
 }
 .middle .band .favorit-band .band-list--yorushika .band-img {
   max-width: 50%;
@@ -289,6 +301,9 @@ a.fixed, .fixed a {
 .middle .band .recommendation-youtube .youtube-container .youtube-border {
   margin-inline: auto;
   border-radius: 50%;
+}
+.middle .band .recommendation-youtube .youtube-container img:hover {
+  box-shadow: 4px 4px 12px #464646;
 }
 .middle .band .my-play {
   max-width: 70%;
