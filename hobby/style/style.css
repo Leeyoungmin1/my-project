@@ -152,6 +152,23 @@ a.fixed, .fixed a {
   text-align: center;
   text-transform: uppercase;
 }
+@keyframes rainbow {
+  0% {
+    color: rgb(236, 176, 247);
+  }
+  25% {
+    color: rgb(244, 76, 76);
+  }
+  50% {
+    color: rgb(247, 200, 80);
+  }
+  75% {
+    color: rgb(135, 221, 111);
+  }
+  100% {
+    color: rgb(124, 203, 235);
+  }
+}
 .middle .band .guid {
   color: darkblue;
 }
@@ -180,6 +197,8 @@ a.fixed, .fixed a {
   text-align: center;
   white-space: nowrap;
   transform: translate(-50%, -50%);
+  animation: rainbow 2s linear infinite;
+  animation-timing-function: 1s ease-in-out 1s;
 }
 .middle .band .introduce-bass {
   max-width: 70%;
