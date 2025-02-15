@@ -274,6 +274,8 @@ a.fixed, .fixed a {
   transform: rotate(8deg);
 }
 .middle__wrapper .deco {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   text-decoration: none;
 }
 .middle__wrapper .character-wrap {
